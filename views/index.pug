@@ -1,0 +1,41 @@
+extends layout
+
+block content
+    header
+        .font tensorlflow
+            span .
+            span js
+    .container
+        .card-deck.card-body
+            .card.text-dark
+                .card-body
+                    h5.card-title
+                        a.text-dark(href='/mobilenet') MobileNet (Client Side)
+                    p.card-text
+                        | MobileNet in action on your browser using tensorflowjs.
+                    .btn-group
+                        a.btn.btn-outline-secondary.btn-sm(href='/mobilenet') Go to App
+                        a.btn.btn-primary.btn-sm(href='#') Learn More
+                    p.card-text
+                        small.text-muted Requires a download of 17.8 MB.
+            .card
+                .card-body
+                    h5.card-title
+                        a.text-dark(href='/vgg19/server') VGG19 (Server Side)
+                    p.card-text VGG19 in action on the server using Node and tensorflowjs.
+                    .btn-group
+                        a.btn.btn-outline-secondary.btn-sm(href='/vgg19/server') Go to App
+                        a.btn.btn-primary.btn-sm(href='#') Learn More
+                    p.card-text
+                        small.text-muted No download required.
+            .card
+                .card-body
+                    h5.card-title
+                        a.text-dark(href='/vgg19') VGG19 (Client Side)
+                    p.card-text
+                        | VGG19 on the browser with tensorflowjs.
+                    .btn-group
+                        a.btn.btn-outline-secondary.btn-sm(href='/vgg19') Go to App
+                        a.btn.btn-primary.btn-sm(href='#') Learn More
+                    p.card-text
+                        small.text-muted Requires a download of 518 MB.

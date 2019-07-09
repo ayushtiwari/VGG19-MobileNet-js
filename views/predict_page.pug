@@ -1,0 +1,49 @@
+extends layout
+
+block content
+  .container
+    .row
+      .col-md-6.mx-auto.my-3
+        .card
+          .card-body
+            form(method='post')
+              .input-group.mb-3
+                .custom-file
+                  input.custom-file-input#image-selector(type='file')
+                  label.custom-file-label(for='image-selector') Choose File
+              input.btn.btn-light.btn-block(type='submit', value='Predict')
+
+    #model-loading.row
+      .col
+        .d-flex.justify-content-center.mt-5.mb-3
+          .spinner-border.text-secondary(role='status')
+            span.sr-only Loading...
+        if model==='VGG19'
+          p.text-center.text-muted Loading VGG19
+        else
+          p.text-center.text-muted Loading MobileNet
+
+    #loading.d-none.row
+      .col
+        .d-flex.justify-content-center.mt-5.mb-3
+          .spinner-border.text-secondary(role='status')
+            span.sr-only Loading...
+        p.text-center.text-muted Predicting
+
+    .row.loader-body
+      .col-md-4.mx-auto
+        #result.card.mt-4(style='display: none;')
+          img#blah.card-img-top(src='#')
+          .card-body(style='display: none')
+            h5.card-title#pred
+            p.card-text#confidence
+
+
+  #plotDiv
+
+
+  #js-variables.d-none
+    .model #{model}
+
+
+
