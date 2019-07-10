@@ -66,7 +66,7 @@ $ npm run dev
 
 This will start the server at localhost on port 3000 (This can be changed in bin/.www file).
 
-Go to http://127.0.0.1:3000/ to access the homepage which should look like [this](screenshots/Screenshot 2019-07-10 at 2.06.01 PM.png).
+Go to http://127.0.0.1:3000/ to access the homepage which should look like [this](https://raw.githubusercontent.com/ayushtiwari/VGG19-MobileNet-js/master/screenshots/Screenshot%202019-07-10%20at%202.06.01%20PM.png).
 
 
 
